@@ -16,7 +16,7 @@
 }
 
 @layer components {
-	.center-text-screen {
+	.center-on-screen {
 		@apply flex h-screen items-center justify-center;
 	}
 }

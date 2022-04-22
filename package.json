@@ -1,13 +1,16 @@
 {
 	"name": "starter-next-tailwind",
-	"version": "1.0.0",
+	"version": "1.0.5",
+	"description": "Starter Template for Next.js and Tailwind CSS with Firebase Hosting.",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"deploy": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting"
 	},
+	"main": "function.js",
 	"dependencies": {
 		"firebase-admin": "^10.0.2",
 		"firebase-functions": "^3.20.1",
@@ -31,5 +34,6 @@
 	},
 	"author": {
 		"name": "Michael Owuor"
-	}
+	},
+	"license": "MIT"
 }
